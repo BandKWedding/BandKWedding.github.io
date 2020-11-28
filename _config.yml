@@ -7,11 +7,11 @@ url: ''
 baseurl: 
 
 # Title of the Site
-title: Sweet & Carr Wedding
+title: Sweet Wedding
 # Description of the Site
-description: Blake and Kaitlyn Sweet - August 20, 2022
+description: Blake and Kaitlyn - August 20, 2022
 # URL of Image of the Site
-site-image: /WhatATheme/assets/images/meta.jpg
+site-image: /assets/images/meta.jpg
 # Keywords of the Site
 site-keywords: Site, Template, Theme
 # URL for the Image of custom Favicon
@@ -27,12 +27,12 @@ facebook_username:
 twitter_username: 
 instagram_username: 
 linkedin_username: 
-github_username:  BSweet16
+github_username: 
 youtube_channel_id: 
-reddit_username: /
-behance_username: /
-dribbble_username: /
-spotify_username: /
+reddit_username: 
+behance_username: 
+dribbble_username: 
+spotify_username: 
 
 # Google Analytics
 google-analytics: UA-163806439-1
@@ -41,7 +41,7 @@ google-analytics: UA-163806439-1
 disqus-shortname: thedevslot
 
 # Name of the Author
-author-name: TheDevsLot
+author-name: Blake
 # URL for the Image of the Author
 author-image: https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png
 # 60 Words About the Author
