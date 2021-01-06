@@ -6,7 +6,7 @@
             <a class="navbar-item" href="{% if page.layout == 'default' %}{{site.url}}{{site.baseurl}}/#{% else %}{{site.url}}{{site.baseurl}}/{% endif %}">
                 <strong>{{site.title}}</strong>
             </a>
-            <button class="navbar-burger" data-target="navbar-menu">
+            <button class="navbar-burger has-background-black" data-target="navbar-menu">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -20,8 +20,7 @@
             </div> -->
             <!-- navbar items | right side -->
             <div class="navbar-end">
-                <a class="navbar-item {% if page.layout == 'default' %}is-active{% endif %}"
-                    href="{% if page.layout == 'default' %}{{site.url}}{{site.baseurl}}/#{% else %}{{site.url}}{{site.baseurl}}/{% endif %}">HOME</a>
+                <a class="navbar-item {% if page.layout == 'default' %}is-active{% endif %}" href="{% if page.layout == 'default' %}{{site.url}}{{site.baseurl}}/#{% else %}{{site.url}}{{site.baseurl}}/{% endif %}">HOME</a>
                 <a class="navbar-item" href="{{site.url}}{{site.baseurl}}/#about">ABOUT</a>
                 <a class="navbar-item" href="{{site.url}}{{site.baseurl}}/#contact">CONTACT</a>
                 <a class="navbar-item {% if page.layout == 'blog' %}is-active{% endif %}"
