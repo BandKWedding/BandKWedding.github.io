@@ -3,6 +3,26 @@
 
 @import "main.scss";
 
+#countdownTimer{
+    p {
+        text-align: center;
+        font-size: 60px;
+        margin-top: 0px;
+      }
+}
+
+.countdownDiv{
+    p{
+        display: inline;
+    }
+    padding-bottom: 2%;
+}
+
+.tile{
+    background-color: aqua;
+    border-radius: 50%;
+}
+
 #navbar {
     opacity: 0.95;
 }
