@@ -24,7 +24,7 @@
 
 #helpfulLinks{
     text-align: center;
-    
+
     a {
         margin: none !important;
         width: calc();
@@ -38,6 +38,17 @@
 
 #navbar {
     opacity: 0.95;
+}
+
+.navbar-burger{
+    text-align: right;
+    display: inline;
+    margin-left: 80vw;
+}
+
+button.navbar-burger {
+    background-color: black;
+    position: relative;
 }
 
 .is-active {
