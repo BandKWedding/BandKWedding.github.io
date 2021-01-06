@@ -1,8 +1,4 @@
 
-// $().on('click', function() {
-// });
-
-
 // Set the date we're counting down to
 const countdownDate = "Aug 20, 2022 17:00:00";
 var countDownDate = new Date(countdownDate).getTime();
