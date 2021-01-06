@@ -47,7 +47,6 @@ Projects will be showcased in a card-list format where each card will contain
 ### Footer -
 The footer includes
 * A small about the author widget which show the same `Author Image` as mentioned in the about section of the Home page which includes `Name of the Author`, `Around 75 words about the author`.
-* A more link widget which includes a link to any extra page that you've created and a `Subscribe via RSS` link.
 * A Recent posts widget which will include latest 3 posts.
 
 #### Extra Features -
