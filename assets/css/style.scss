@@ -40,10 +40,14 @@
     opacity: 0.95;
 }
 
+.navbar-brand {
+    display: inline-flex !important; // Keeps the hamburger menu button on the same line
+}
+
 .navbar-burger{
+    margin-left: 45vw;
     text-align: right;
     display: inline;
-    margin-left: 80vw;
 }
 
 button.navbar-burger {
