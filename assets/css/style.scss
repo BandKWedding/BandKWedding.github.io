@@ -3,6 +3,14 @@
 
 @import "main.scss";
 
+.in-line{
+    display: inline;
+}
+
+.is-active {
+    font-weight: 600;
+}
+
 #countdownTimer{
     p {
         text-align: center;
@@ -18,59 +26,50 @@
     padding-bottom: 2%;
 }
 
-.in-line{
-    display: inline;
-}
-
 #navbar {
     opacity: 0.95;
-}
 
-.navbar-brand {
-    display: inline-flex !important; // Keeps the hamburger menu button on the same line
-}
-
-.navbar-burger{
-    margin-left: 45vw;
-    text-align: right;
-    display: inline;
-}
-
-button.navbar-burger {
-    background-color: black;
-    position: relative;
-}
-
-.is-active {
-    font-weight: 600;
-}
-
-.navbar-dropdown {
-    border: none;
-    right: 0;
-    left: auto;
-}
-
-a.navbar-item:hover,
-.navbar-link:hover {
-    background-color: rgba($color: #fff, $alpha: 0.25) !important;
-    color: white !important;
-}
-
-a.navbar-item.is-active {
-    background-color: rgba($color: #fff, $alpha: 0.25) !important;
-    color: white !important;
-
-    &:hover {
+    .navbar-brand {
+        display: inline-flex !important; // Keeps the hamburger menu button on the same line
+    }
+    
+    .navbar-burger{
+        margin-left: 45vw;
+        text-align: right;
+        display: inline;
+    }
+    
+    .navbar-dropdown {
+        border: none;
+        right: 0;
+        left: auto;
+    }
+    
+    button.navbar-burger {
+        background-color: black;
+        position: relative;
+    }
+    
+    a.navbar-item:hover,
+    .navbar-link:hover {
         background-color: rgba($color: #fff, $alpha: 0.25) !important;
-        color: grey;
+        color: white !important;
+    }
+    
+    a.navbar-item.is-active {
+        background-color: rgba($color: #fff, $alpha: 0.25) !important;
+        color: white !important;
+    
+        &:hover {
+            background-color: rgba($color: #fff, $alpha: 0.25) !important;
+            color: grey;
+        }
+    }
+    
+    .navbar-link:not(.is-arrowless)::after {
+        border-color: grey;
     }
 }
-
-.navbar-link:not(.is-arrowless)::after {
-    border-color: grey;
-}
-
 
 #hero {
     background: rgb(0, 0, 0);
