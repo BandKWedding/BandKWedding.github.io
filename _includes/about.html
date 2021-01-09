@@ -9,19 +9,25 @@
                 </div>
                 <div class="column has-text-left-desktop has-text-left-tablet has-text-left-fullhd has-text-left-widescreen">
                     <p>{{site.author-about}}</p>
-                    <div id="helpfulLinks">
-                        <a href="{{site.url}}{{site.baseurl}}/#contact" class="button is-rounded is-uppercase has-text-weight-normal is-black is-outlined">Hotel Information</a><br>
-                        <a href="{{site.url}}{{site.baseurl}}/#contact" class="button is-rounded is-uppercase has-text-weight-normal is-black is-outlined">Our Registry</a><br>
-                        <a href="{{site.url}}{{site.baseurl}}/#contact" class="button is-rounded is-uppercase has-text-weight-normal is-black is-outlined">RSVP</a>
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div id="helpfulLinks">
+                                <a href="{{site.url}}{{site.baseurl}}/#contact" class="button is-rounded is-uppercase has-text-weight-normal is-black is-outlined">Hotel Information</a><br>
+                                <a href="{{site.url}}{{site.baseurl}}/#contact" class="button is-rounded is-uppercase has-text-weight-normal is-black is-outlined">Our Registry</a><br>
+                                <a href="{{site.url}}{{site.baseurl}}/#contact" class="button is-rounded is-uppercase has-text-weight-normal is-black is-outlined">RSVP</a>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <a id="contact-button" href="mailto:{{site.email}}" class="button is-rounded is-uppercase has-text-weight-normal is-black is-outlined has-text-weight-semibold column is-two-fifths" target="_blank">
+                                <i class="fas fa-envelope"></i>Send us an Email
+                            </a>
+                        </div>
                     </div>
                     <div class="countdownDiv">
                         <br>
                         <p><b>Date: </b>August 20, 2022</p> <p id="countdownTimer"></p><br>
-                        <p class="in-line"><b>Location: </b>600 Benner Rd, Miamisburg, OH 45342 (</p> <a href="{{site.url}}{{site.baseurl}}/#map">Google Map</a> <p>)</p>
+                        <p class="in-line"><b>Location: </b>600 Benner Rd, Miamisburg, OH 45342 (</p> <a href="{{site.url}}{{site.baseurl}}/#map">Google Map</a> <p>)</p><br>
                     </div>
-                    <a id="contact-button" href="mailto:{{site.email}}" class="button is-rounded is-uppercase has-text-weight-normal is-black is-outlined has-text-weight-semibold column is-two-fifths" target="_blank">
-                        <i class="fas fa-envelope"></i>Send us an Email
-                    </a>
                     <p class="button" id="blake-cell">Blake's Cell: (859) 351 - 5021</p>
             </div>
         </div>

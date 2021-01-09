@@ -22,20 +22,6 @@
     display: inline;
 }
 
-#helpfulLinks{
-    text-align: center;
-
-    a {
-        margin: none !important;
-        width: calc();
-    }
-
-}
-
-#blake-cell{
-    justify-content: center;
-}
-
 #navbar {
     opacity: 0.95;
 }
@@ -117,26 +103,11 @@ a.navbar-item.is-active {
 }
 
 #about {
-    .image {
-        max-width: 20vmax;
-        margin: auto;
-
-        img {
-            border: 0.25rem dotted black;
-        }
-    }
-
-    a {
-        min-width: 25vmax;
-        // margin: 0.5rem;
-    }
-}
-
-#contact {
     #contact-button {
         margin: 0.5rem auto;
         display: flex;
         justify-content: center;
+        height: 100%;
     }
 
     svg {
@@ -149,8 +120,35 @@ a.navbar-item.is-active {
         }
     }
 
+    #helpfulLinks{
+        text-align: center;
+    
+        a {
+            margin: none !important;
+        }
+    
+    }
+    
+    #blake-cell{
+        justify-content: center;
+        margin-left: 0 !important;
+    }
+
     hr {
         background-color: black;
+    }
+    
+    .image {
+        max-width: 20vmax;
+        margin: auto;
+
+        img {
+            border: 0.25rem dotted black;
+        }
+    }
+
+    a {
+        min-width: 25vmax;
     }
 }
 
