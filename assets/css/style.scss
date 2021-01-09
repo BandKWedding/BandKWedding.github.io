@@ -32,6 +32,14 @@
     .navbar-brand {
         display: inline-flex !important; // Keeps the hamburger menu button on the same line
     }
+
+    .navbar-menu {
+        display: none;
+    }
+    
+    .navbar-menu.is-active {
+        display: inherit !important; // Opens the menu if active class is present
+    }
     
     .navbar-burger{
         margin-left: 45vw;
