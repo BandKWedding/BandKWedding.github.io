@@ -27,22 +27,27 @@
 }
 
 #navbar {
-    opacity: 0.95;
+    background: border-box; // Makes the background dissapear
 
     .navbar-brand {
         display: inline-flex !important; // Keeps the hamburger menu button on the same line
+        width: 100%;
     }
 
     .navbar-menu {
         display: none;
+
+        .navbar-end{
+            width: 100%;
+        }
     }
-    
+
     .navbar-menu.is-active {
         display: inherit !important; // Opens the menu if active class is present
+        text-align: center;
     }
     
     .navbar-burger{
-        margin-left: 45vw;
         text-align: right;
         display: inline;
     }
