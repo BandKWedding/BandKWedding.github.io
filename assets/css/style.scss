@@ -39,12 +39,18 @@
 
         .navbar-end{
             width: 100%;
+
+            // When the view is large like a desktop
+            @media screen and (min-width: 1024px) {
+                justify-content: center;
+            }
         }
     }
 
     .navbar-menu.is-active {
         display: inherit !important; // Opens the menu if active class is present
         text-align: center;
+        width: inherit; // Nav bar exapanded is full view width
     }
     
     .navbar-burger{
