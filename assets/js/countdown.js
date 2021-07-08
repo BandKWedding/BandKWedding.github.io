@@ -1,7 +1,7 @@
 
 // Set the date we're counting down to
 const countdownDate = "Aug 20, 2022 18:30:00";
-const showYears = false; // If the value is true, the timer will display a value for the number of years and days. If false, the countdown will display however many days, counting over 365 days instead of displaying a year.
+const showYears = true; // If the value is true, the timer will display a value for the number of years and days. If false, the countdown will display however many days, counting over 365 days instead of displaying a year.
 var countDownDate = new Date(countdownDate).getTime();
 
 // Update the count down every 1 second
