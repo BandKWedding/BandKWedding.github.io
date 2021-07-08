@@ -20,7 +20,7 @@ var x = setInterval(function() {
   const timerDivID = 'countdownTimer';
   const timerDiv = document.getElementById(timerDivID);
   if (timerDiv){
-    timerDiv.innerHTML = ` (${showYears ? `${years} Years` : ``} ${days} Days ${hours} Hours ${minutes} Minutes ${seconds} Seconds)`;
+    timerDiv.innerHTML = ` (${showYears && years > 0 ? `${years} Years` : ``} ${days} Days ${hours} Hours ${minutes} Minutes ${seconds} Seconds)`;
   }
     
   // If the count down is over, write some text 
