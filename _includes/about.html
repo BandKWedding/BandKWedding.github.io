@@ -18,7 +18,7 @@
                             </div>
                         </div>
                         <div class="col-md-4">
-                            <a id="contact-button" href="mailto:{{site.email}}" class="button is-rounded is-uppercase has-text-weight-normal is-black is-outlined has-text-weight-semibold column is-two-fifths" target="_blank">
+                            <a id="contact-button" href="mailto:{{site.email}}?Subject= The%20Wedding{% if site.email && site.email2 %}&cc={{site.email2}}{% else %}{% endif %}" class="button is-rounded is-uppercase has-text-weight-normal is-black is-outlined has-text-weight-semibold column is-two-fifths" target="_blank">
                                 <i class="fas fa-envelope"></i>Send us an Email
                             </a>
                         </div>
