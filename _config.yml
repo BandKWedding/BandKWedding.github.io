@@ -11,14 +11,14 @@ title: Sweet & Carr Wedding
 # Description of the Site
 description: Blake and Kaitlyn - August 20, 2022
 # URL of Image of the Site
-site-image: /assets/images/meta.jpg
+site-image: /assets/images/hero.jpg
 # Keywords of the Site
 site-keywords: Site, Template, Theme
 # URL for the Image of custom Favicon
 favicon-url: /assets/images/favicon.png
 
 # URL of the Image of Custom Hero Image (i.e., the image in the background of the very first section of the Homepage)
-heroimage: /assets/images/engagement_pictures/1
+heroimage: /assets/images/hero.jpg
 
 # Social Media and Contact
 # If you don't want to use any icon, you can leave them blank.
@@ -45,7 +45,7 @@ disqus-shortname:
 author-name: Blake Sweet
 author-name-last: and Kaitlyn Carr
 # URL for the Image of the Author
-author-image: https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png
+author-image: /assets/images/engagement_pictures/3.jpg
 # 60 Words About the Author
 author-about: "We are blessed to welcome friends and family to our wedding! 
               Guests may RSVP by mail or by using one of the links in this website, whichever is most convenient. 
