@@ -10,11 +10,12 @@ tags:
 
 To make your trip easier and more enjoyable, we have gathered a list of local hotels. We have blocks available at the hotels listed with the blocked rate. The listed hotels are ordered from order of their value.  
 
-|[Hilton Garden Inn](https://www.hilton.com/en/hotels/daydsgi-hilton-garden-inn-dayton-south-austin-landing/)|
+|[Hilton Garden Inn](https://www.hilton.com/en/hotels/daydsgi-hilton-garden-inn-dayton-south-austin-landing/)| [Book a room](https://www.my-event.hilton.com/daydsgi-scw-402be2f9-60c0-4acf-8704-0c3bd3653dfd/)
 | :---: | :--- |
 |**Contact Number** | (937) 247 - 5850 |
-|**Block Rate**     | $x / night       |
+|**Block Rate**     | 2 Queen Beds - $139.00<br />1 King Bed - $139.00  |
 |**Address**        |12000 Innovation Drive <br />Miamisburg, Ohio 45342 | 
+|**More Information** | 2 Night minimum<br />No pets allowed |
 
 |[Staybridge Suites](https://www.ihg.com/staybridge/hotels/us/en/miamisburg/daymb/hoteldetail)|
 | :---: | :--- |
