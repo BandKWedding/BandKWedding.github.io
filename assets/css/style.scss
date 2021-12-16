@@ -101,10 +101,10 @@
         background-image: url({{site.heroimage}});
         background-position: center;
         background-repeat: no-repeat;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
+        -webkit-background-size: contain;
+        -moz-background-size: contain;
+        -o-background-size: contain;
+        background-size: contain;
         background-attachment: fixed;
         top: 0px;
         right: 0px;
