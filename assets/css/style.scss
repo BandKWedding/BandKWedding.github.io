@@ -90,6 +90,25 @@
     }
 }
 
+.masthead {
+    overflow: hidden; // added for pseudo-element
+    position: relative; // added for pseudo-element
+
+    // Fixed-position background image
+    &::before {
+        content: ' ';
+        position: fixed; // instead of background-attachment
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: url({{site.heroimage}}) no-repeat center center;
+        background-size: cover;
+        will-change: transform; // creates a new paint layer
+        z-index: -1; //ensures image is behind everything else
+    }
+}
+
 #hero {
     background: rgb(0, 0, 0);
     background: -moz-linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.75) 100%);
@@ -101,10 +120,10 @@
         background-image: url({{site.heroimage}});
         background-position: center;
         background-repeat: no-repeat;
-        -webkit-background-size: contain;
-        -moz-background-size: contain;
-        -o-background-size: contain;
-        background-size: contain;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
         background-attachment: fixed;
         top: 0px;
         right: 0px;
@@ -115,6 +134,7 @@
         content: "";
     }
 }
+
 .title {
     margin: auto 0.75rem!important;
 }
