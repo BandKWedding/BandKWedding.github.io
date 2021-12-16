@@ -90,6 +90,14 @@
     }
 }
 
+// Must have different opacities, but both be listed
+.has-background-white-ter{
+    opacity: 0.99;
+    .hero-body{
+        opacity: 1.00 !important;
+    }
+}
+
 .masthead {
     overflow: hidden; // added for pseudo-element
     position: relative; // added for pseudo-element
