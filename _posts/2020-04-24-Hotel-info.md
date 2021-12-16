@@ -20,6 +20,6 @@ To make your trip easier and more enjoyable, we have gathered a list of local ho
 |[Staybridge Suites](https://www.ihg.com/staybridge/hotels/us/en/miamisburg/daymb/hoteldetail)|
 | :---: | :--- |
 |**Contact Number** | (937) 535 - 2222 |
-|**Block Rate**     | $x / night       |
+|**Block Rate**     | $144 / night       |
 |**Address**        |10110 Landing Way <br />Miamisburg, Ohio 45342 |
-|**More Information**| Check-in: **3pm** <br />Check-out: **12pm (Noon)** |
+|**More Information**| **Check-in:** 3pm <br />**Check-out:** 8/21/2022 12:00pm (Noon)<br />**Blocks available until:** 7/28/2022<br />**Group Code:** SCW<br /> **Pet Fee:** $25|
