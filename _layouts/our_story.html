@@ -1,0 +1,138 @@
+---
+layout: compress
+---
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  {% include head.html %}
+</head>
+
+<body>
+  {% include navbar.html %}
+
+  <section class="hero is-fullheight has-text-centered" id="post">
+    <div class="hero-body">
+      <div class="container">
+        <a href="{{page.url | relative_url}}" class="has-text-black" id="title">
+          <h1 class="title has-text-centered is-2 has-text-weight-semibold ">{{page.title}}</h1>
+        </a>
+        <hr class="has-background-black">
+        <div class="columns is-variable is-5">
+          <div class="column is-6">
+            <figure class="image is-16by9 has-shadow">
+              <img src="{{page.post-image}}" alt="{{post.title}}" id="post-image">
+            </figure>
+          </div>
+          <div class="subtitle column is-5 has-text-left-desktop has-text-left-fullhd has-text-left-tablet has-text-center-mobile">
+            {% unless page.description.size == 0 %}
+            <p id="description" class="content is-small has-text-weight-medium is-uppercase">{{page.description | strip | strip_html | strip_newlines }}</p>
+            {% endunless %}
+            <!-- <p class="subtitle is-6 is-uppercase has-text-weight-normal has-text-black-ter"> -->
+              <!-- Published on <b>{{ page.date | date: "%-B %d, %Y" }}</b> by  -->
+              <!-- <a href="{% if site.author-url %}{{site.author-url}}{% else %}{{site.url}}{{site.baseurl}}/#about{% endif %}" target="_blank"><b class="has-text-link"><u></u></b></a> -->
+            <!-- </p> -->
+            {%- assign tags = page.tags -%}
+            {%- unless tags.size == 0 -%}
+            <p class="subtitle is-uppercase">
+              <i class="fas fa-tags"></i>
+              {% assign i = 0 %}
+              {% for tags in page.tags %}
+              <span class="tag is-link">{{page.tags[i]}}</span>
+              {% assign i = i | plus:1 %}
+              {% endfor %}
+            </p>
+            {%- endunless -%}
+            
+            <!-- {% assign words = content | number_of_words %}
+            {%- unless content.size == 0 -%}
+            <p class="subtitle is-uppercase"><i class="fas fa-clock"></i> <b class="has-text-link">
+                {{ words | divided_by:180 }} min
+              </b>READ</p>
+            {%- endunless -%} -->
+          </div>
+        </div>
+        <div class="content has-text-justified-desktop has-text-justified-fullhd has-text-justified has-text-justified-tablet has-text-left-mobile">
+          <p>{{ content }}</p>
+
+          <!-- His / Hers Headers -->
+          <div class="row">
+            <div class="col-md-6 center">
+              <h2>Hers</h2>
+            </div>
+            <div class="col-md-6 center">
+              <h2>His</h2>
+            </div>
+          </div>
+
+          <!-- Story Content -->
+          <div class="row">
+            <div class="col-md-6 center">
+              <p>Kaitlyn's Story goes here.</p>
+            </div>
+            <div class="col-md-6 center">
+              <p>On February 7th, 2016 around 6pm, I was working during the night of the Super Bowl. I was working the self checkout stations at the back entrance of the store. 
+                Lucky me, customers and managers rarely come around back there. 
+                Leaned up against a trash can bored, I watched the most beautiful girl I've ever seen walk through the door. She hadn't realized I was even there yet.
+                Not to stare, I looked down at my handheld and then back at her again as she walked by to say hello. 
+                As I looked back up, she stared back at me with eyes as if she felt the same way. 
+                She blushed as her roommate followed her into the store and they both kept walking.
+                I had to do a double take just to make sure she was real. No boyfriend in sight.
+                While she disappeared into the store, I was hoping she would come back to the same place she came in to check out.<br>
+                Thank god she did.<br>
+                With no other customers in sight, at least I think, I caught her straing at me out of the corner of my eye as her and her roommate chose a self checkout machine.
+                She quickly looked away and started checking out.
+                I needed an excuse to talk to her. Using the handheld, I made the self checkout appear to call for the attendant.
+                When I went over to "fix it" she looked at me embarassed. Every time she looked at me, I was at a loss of words.
+                Starstruck, I just smiled and walked back to my post.
+                I gathered myself and did it again.. and again.. until I could finally work up the courage to make small talk.
+                The more we talked, we realized that we were both from Lexington, went to Tates Creek High School, and even knew some people in common. 
+                After she managed to checkout the few things she came in for in the first place, her and her roomate left. 
+                Just like that, she was gone.<br>
+                I stood back at my post thinking about how much I had messed up. Then she came back in. <br>
+                <br>
+                She forgot a drink from the machine. She walked back to the self checkout, bought it, then came over to me. 
+                She came back to tell me that she was throwing a Super Bowl party, and I should come! 
+                I had to play it cool, so I told her I had plans for another party with a friend, but I would come afterwards if she was still there and maybe I could bring my friend from the party?
+                I had no party to go to though.
+                I asked for her number to meet up at the party later, and she actually gave me her phone number.
+                Then she left again.<br>
+                <br>
+                With no idea on what had just happened, I went back to my post yet again. 
+                I only knew one thing, and being the college bad-boy I was, I texted it to my mom.
+                All I could say, was that I had found her.<br>
+                <br>I had found my wife.
+              </p>
+            </div>
+          </div>
+        </div>
+        {% unless site.disqus-shortname == "" %}
+        <div class="disqus-comments" id="disqus_thread"></div>
+        {% endunless %}
+      </div>
+    </div>
+  </section>
+  {% include footer.html %}
+</body>
+
+<script>
+  /**
+   *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+   *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+  /*
+  var disqus_config = function () {
+  this.page.url = PAGE_URL;  Replace PAGE_URL with your page's canonical URL variable
+  this.page.identifier = PAGE_IDENTIFIER; Replace PAGE_IDENTIFIER with your page's unique identifier variable
+  };
+  */
+  (function () { /* DON'T EDIT BELOW THIS LINE */
+    var d = document,
+      s = d.createElement('script');
+    //s.src = 'https://{{site.disqus-shortname}}.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
+</script>
+
+</html>
