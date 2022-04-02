@@ -10,7 +10,16 @@ body {
     transition: all 0.25s ease;
 }
 
+iframe {
+    display: block; /* iframes are inline by default */
+    border: none; /* Reset default border */
+    height: 90vh; /* Viewport-relative units */
+    width: 90vw;
+}
 
+#iframe-body {
+    padding-bottom: unset;
+}
 
 /* width */
 ::-webkit-scrollbar {
