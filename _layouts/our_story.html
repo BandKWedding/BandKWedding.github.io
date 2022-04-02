@@ -29,28 +29,6 @@ layout: compress
             {% unless page.description.size == 0 %}
             <p id="description" class="content is-small has-text-weight-medium is-uppercase">{{page.description | strip | strip_html | strip_newlines }}</p>
             {% endunless %}
-            <!-- <p class="subtitle is-6 is-uppercase has-text-weight-normal has-text-black-ter"> -->
-              <!-- Published on <b>{{ page.date | date: "%-B %d, %Y" }}</b> by  -->
-              <!-- <a href="{% if site.author-url %}{{site.author-url}}{% else %}{{site.url}}{{site.baseurl}}/#about{% endif %}" target="_blank"><b class="has-text-link"><u></u></b></a> -->
-            <!-- </p> -->
-            {%- assign tags = page.tags -%}
-            {%- unless tags.size == 0 -%}
-            <p class="subtitle is-uppercase">
-              <i class="fas fa-tags"></i>
-              {% assign i = 0 %}
-              {% for tags in page.tags %}
-              <span class="tag is-link">{{page.tags[i]}}</span>
-              {% assign i = i | plus:1 %}
-              {% endfor %}
-            </p>
-            {%- endunless -%}
-            
-            <!-- {% assign words = content | number_of_words %}
-            {%- unless content.size == 0 -%}
-            <p class="subtitle is-uppercase"><i class="fas fa-clock"></i> <b class="has-text-link">
-                {{ words | divided_by:180 }} min
-              </b>READ</p>
-            {%- endunless -%} -->
           </div>
         </div>
         <div class="content has-text-justified-desktop has-text-justified-fullhd has-text-justified has-text-justified-tablet has-text-left-mobile">
@@ -71,12 +49,12 @@ layout: compress
             <div class="col-md-6 center">
               <p>Blake and I met on February 7th, 2016. It was Super Bowl Sunday, and I walked to Kroger with my roommate to get some snacks before we had friends over for the game. We came in through the back door and I instantly fell in love with the cute guy working the uscan. I talked about him the whole time we shopped but was too nervous to say anything to him. 
                 We went to check out and every time I tried to scan something, my machine would say “attendant has been notified to assist you” so I kept having to ask him for help. Probably the reddest I have ever been, I was so embarrassed thinking “here is the cutest guy I’ve ever seen and he’s going to think I’m such an idiot that I can’t even buy groceries”. He later told me he was the one doing it on his little handheld to get me to turnaround and talk to him.
-                Once we started talking, we found out we were both from Lexington, went to the same high school, and had so much in common. I was WAY too nervous to ask for his number and left the store, but thankfully my roommate at the time, Cassie, was there💓 We stood right outside the back doors and she convinced me to go back in. I went to get a Dr. Pepper, my excuse for coming back. They didn’t have any, so I bought a diet which Blake would later learn I absolutely hated lol.  We started talking again and ultimately I invited him to our Super Bowl party. 
+                Once we started talking, we found out we were both from Lexington, went to the same high school, and had so much in common. I was WAY too nervous to ask for his number and left the store, but thankfully my roommate at the time, Cassie, was there 💓. We stood right outside the back doors and she convinced me to go back in. I went to get a Dr. Pepper, my excuse for coming back. They didn’t have any, so I bought a diet which Blake would later learn I absolutely hated lol.  We started talking again and ultimately I invited him to our Super Bowl party. 
                 I put my number in his phone and spent the next hour a bundle of nerves and excitement; nervous that I had given him the wrong number the way my hands were shaking, excited that I might get to hangout with this cute guy. I later found out that he had texted his mom after I left saying “mom, I think I found her.” He came over with a friend after work and from that night on, we were inseparable.
                 We both knew from day 1 that this was it for us and it’s so cool to me that we’re living out every dream we talked about in all those early months of dating. I’m excited for our next chapter and so excited to start it off celebrating with our friends and family!</p>
             </div>
             <div class="col-md-6 center">
-              <p>On February 7th, 2016 around 6pm, I was working during the night of the Super Bowl. I was working the self checkout stations at the back entrance of the store. 
+              <p>On February 7th, 2016, I was working during the night of the Super Bowl. I was working the self checkout stations at the back entrance of the store. 
                 Lucky me, customers and managers rarely come around back there. 
                 Leaned up against a trash can bored, I watched the most beautiful girl I've ever seen walk through the door. She hadn't realized I was even there yet.
                 Not to stare, I looked down at my handheld and then back at her again as she walked by to say hello. 
