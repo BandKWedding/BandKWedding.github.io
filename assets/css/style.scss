@@ -147,13 +147,6 @@
 }
 
 #about {
-    #contact-button {
-        margin: 0.5rem auto;
-        display: flex;
-        justify-content: center;
-        height: 100%;
-    }
-
     svg {
         transition: all 0.15s ease-in-out;
         margin: auto 0.75vmax;
@@ -166,6 +159,7 @@
 
     #helpfulLinks{
         text-align: center;
+        width: 100%;
     
         a {
             margin: none !important;
