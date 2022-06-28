@@ -2,7 +2,7 @@
 title: Hotel Information
 layout: post
 post-image: "https://www.hilton.com/im/en/DAYDSGI/1466531/austin-landing-exterior.jpg?impolicy=crop&cw=6169&ch=3453&gravity=NorthWest&xposition=0&yposition=331&rw=768&rh=430"
-description: A list of suggested hotels in the area.
+description: A list of suggested hotels in the area. We have hotel room blocks at the hotels listed with links.
 ---
 
 To make your trip easier and more enjoyable, we have gathered a list of local hotels. We have blocks available at the hotels listed with the blocked rate. 

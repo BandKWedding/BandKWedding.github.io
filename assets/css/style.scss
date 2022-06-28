@@ -194,7 +194,8 @@ iframe {
     }
 }
 
-#blog {
+#blog,
+#bridalPartySection {
     .hero-body {
         padding: 3rem 0.25rem 1rem 0.25rem;
     }
@@ -257,6 +258,20 @@ iframe {
                 background-size: cover;
             }
         }
+    }
+}
+
+#bridalPartySection {
+    #blog-card { 
+        background-color: white;
+        border: 1px solid #E0FFFF;
+        margin-left: auto;
+    }
+}
+
+#securityModal{ 
+    .modal-content {
+        margin-top: 30vh;
     }
 }
 
