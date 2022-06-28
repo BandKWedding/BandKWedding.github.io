@@ -28,7 +28,7 @@ $(document).ready(function() {
   
   // Submit person name
   $("#nameSubmit").off().on("click", function() {
-    const firstName = $("#person-name").val();
+    const firstName = $("#person-name").val().trim();
     const foundName = invited.find(person => person.toUpperCase() === firstName.toUpperCase());
     if (foundName){
       $("#securityModal").modal("hide")
