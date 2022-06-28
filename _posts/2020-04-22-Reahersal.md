@@ -7,4 +7,7 @@ private: true
 ---
 <u>Schedule</u>  
 12pm - 2pm - **Rehearsal Lunch** @ [Cooper's Hawk Winery & Restaurants](https://chwinery.com/locations/ohio/centerville-oh)  
+&nbsp;&nbsp;&nbsp;&nbsp;5220 Cornerstone North Blvd  
+&nbsp;&nbsp;&nbsp;&nbsp;Centerville, OH 45440  
+&nbsp;&nbsp;&nbsp;&nbsp;[Get Directions](https://maps.google.com/maps?q=Cooper’s%20Hawk%20Winery%20%26%20Restaurant%2B5220%20Cornerstone%20North%20Blvd%2C%20Centerville%2C%20OH%2045440&39.6640604%2B-84.1076468)  
 2pm - 3pm - **Rehearsal** @ TBD
