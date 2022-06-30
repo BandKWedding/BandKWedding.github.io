@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  $("#contact-button").off().on("click", function() {
+  $("#contact-button").off().on("click touchstart", function() {
     sendMail();
   });
 });
