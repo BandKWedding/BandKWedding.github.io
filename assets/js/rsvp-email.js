@@ -13,7 +13,8 @@ function sendMail(mainEmail, ccEmail) {
   
 Phone Number: 
 
-Do you need any help with anything?: `;
+Do you need any help with anything?: 
+`;
 
   // Send templated email to the address
   var link = "mailto:" + mainEmail
