@@ -1,6 +1,6 @@
 $(document).ready(function() {
   $("#contact-button").off().on("click touchstart", function() {
-    sendMail();
+    sendMail("blake.sweet16@gmail.com", "kaitlyncarr21@yahoo.com");
   });
 });
 
