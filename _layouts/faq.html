@@ -1,0 +1,180 @@
+---
+layout: compress
+---
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  {% include head.html %}
+</head>
+
+<body>
+  {% include navbar.html %}
+
+  <section class="hero is-fullheight has-text-centered" id="faq-section">
+    <div class="hero-body">
+      <div class="container">
+        <a href="{{page.url | relative_url}}" class="has-text-black" id="title">
+          <h1 class="title has-text-centered is-2 has-text-weight-semibold ">{{page.title}}</h1>
+        </a>
+        <hr class="has-background-black">
+        <div class="columns is-variable is-5">
+          <div class="column is-6">
+            <figure class="image is-16by9 has-shadow">
+              <img src="{{page.post-image}}" alt="{{post.title}}" id="post-image">
+            </figure>
+          </div>
+          <div class="subtitle column is-5 has-text-left-desktop has-text-left-fullhd has-text-left-tablet has-text-center-mobile">
+            {% unless page.description.size == 0 %}
+            <p id="description" class="content is-small has-text-weight-medium is-uppercase">{{page.description | strip | strip_html | strip_newlines }}</p>
+            {% endunless %}
+          </div>
+        </div>
+        <div class="content has-text-justified-desktop has-text-justified-fullhd has-text-justified has-text-justified-tablet has-text-left-mobile">
+          <p>{{ content }}</p>
+
+          <!-- FAQ Questions Accordion -->
+          <section>
+            <div class="container">
+              <div class="accordion">
+
+                <div class="accordion-item" id="question1">
+                  <a class="accordion-link" href="#question1">
+                    Will the ceremony and reception be held at the same location?
+                    <ion-icon name="add-outline"></ion-icon>
+                    <ion-icon name="remove-outline"></ion-icon>
+                  </a>
+                  <div class="answer">
+                    <p>Yes, they will both take place at Canopy Creek Farms.</p>
+                  </div>
+                </div>
+
+                <div class="accordion-item" id="question2">
+                  <a class="accordion-link" href="#question2">
+                    Will the ceremony and reception be held indoors or outdoors?
+                    <ion-icon name="add-outline"></ion-icon>
+                    <ion-icon name="remove-outline"></ion-icon>
+                  </a>
+                  <div class="answer">
+                    <p>The ceremony will be held outdoors and the reception will be held inside the on-site barn. The barn is air-conditioned and guests will have access to the barn, as well as an outdoor patio and large lawn area.</p> 
+                  </div>
+                </div>
+
+                <div class="accordion-item" id="question3">
+                  <a class="accordion-link" href="#question3">
+                    What is the dress code?
+                    <ion-icon name="add-outline"></ion-icon>
+                    <ion-icon name="remove-outline"></ion-icon>
+                  </a>
+                  <div class="answer">
+                    <p>Semi-formal / dressy casual.<br>
+                      <i>This typically means Light colors and fabrics, but <b>no white</b></i><br><br>
+                      For example:<br>
+                      Any dress length is fine.<br>
+                      Heels, nice wedges, or formal flats are recommended. You'll be walking across a (mostly) paved lawn up to an un-paved ceremony area, but avoid traditional heels that will likely get stuck in the grass just incase.<br>
+                      Dress shirt and khakis (pants or shorts)<br>
+                      Tie optional
+                      </ul>
+                    </p>
+                  </div>
+                </div>
+
+                <div class="accordion-item" id="question4">
+                  <a class="accordion-link" href="#question4">
+                    Will there be an open bar?
+                    <ion-icon name="add-outline"></ion-icon>
+                    <ion-icon name="remove-outline"></ion-icon>
+                  </a>
+                  <div class="answer">
+                    <p>Yes, we will have a selection of beer, wine, and bourbon for our guests. If you would like something specific, feel free to bring it!</p>
+                  </div>
+                </div>
+
+                <div class="accordion-item" id="question5">
+                  <a class="accordion-link" href="#question5">
+                    Can I take pictures during the ceremony to post on social media?
+                    <ion-icon name="add-outline"></ion-icon>
+                    <ion-icon name="remove-outline"></ion-icon>
+                  </a>
+                  <div class="answer">
+                    <p>We ask that phones are not out during the ceremony, but you are more than welcome to take pictures throughout the reception. We would love to see your pictures, so please feel free to send us a copy at blake.sweet16@gmail.com or kaitlyncarr21@yahoo.com.
+                      <br><a id="contact-button" href="mailto:{{site.email}}?Subject=Wedding%20Pictures{% if site.email && site.email2 %}&cc={{site.email2}}{% else %}{% endif %}" class="button is-rounded is-uppercase has-text-weight-normal is-black is-outlined" target="_blank">
+                        <i class="fas fa-envelope"></i>Send us Pictures
+                      </a>
+                    </p>
+                  </div>
+                </div>
+
+                <div class="accordion-item" id="question6">
+                  <a class="accordion-link" href="#question6">
+                    I’m flying in from out of town. What city should I fly into?
+                    <ion-icon name="add-outline"></ion-icon>
+                    <ion-icon name="remove-outline"></ion-icon>
+                  </a>
+                  <div class="answer">
+                    <p>We would recommend flying into Dayton Intl. Airport or Cincinnati Airport! <br>Dayton Intl. Airport airport is roughly 25 minutes from our hotel block options. Cincinnati Airport is another option, but it is roughly an hour drive from the hotels.</p> 
+                  </div>
+                </div>
+
+                <div class="accordion-item" id="question7">
+                  <a class="accordion-link" href="#question7">
+                    How far is the venue from our hotel?
+                    <ion-icon name="add-outline"></ion-icon>
+                    <ion-icon name="remove-outline"></ion-icon>
+                  </a>
+                  <div class="answer">
+                    <p>The venue is a 10 minute drive from our hotel blocks.<br>
+                      If you are driving in from Kentucky the day of, it is also a 10 minute drive from the interstate exit.</p>
+                  </div>
+                </div>
+
+                <div class="accordion-item" id="question8">
+                  <a class="accordion-link" href="#question8">
+                    What food will be served?
+                    <ion-icon name="add-outline"></ion-icon>
+                    <ion-icon name="remove-outline"></ion-icon>
+                  </a>
+                  <div class="answer">
+                    <p>We will serving a buffet style meal with the following options: marinated grill chicken, smoked beef brisket, fresh herbed green beans, baked macaroni and cheese, garlic smashed potatoes, and assorted rolls. There will also be a choice of caesar or garden tossed salad.</p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </section>
+
+        </div>
+        {% unless site.disqus-shortname == "" %}
+        <div class="disqus-comments" id="disqus_thread"></div>
+        {% endunless %}
+      </div>
+    </div>
+  </section>
+
+  {% include footer.html %}
+  <!-- IonIcons -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+<script>
+  /**
+   *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+   *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+  /*
+  var disqus_config = function () {
+  this.page.url = PAGE_URL;  Replace PAGE_URL with your page's canonical URL variable
+  this.page.identifier = PAGE_IDENTIFIER; Replace PAGE_IDENTIFIER with your page's unique identifier variable
+  };
+  */
+  (function () { /* DON'T EDIT BELOW THIS LINE */
+    var d = document,
+      s = d.createElement('script');
+    //s.src = 'https://{{site.disqus-shortname}}.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
+</script>
+
+</html>

@@ -461,3 +461,104 @@ iframe {
         }
     }
 }
+
+#faq-section {
+    *, 
+    *::before,
+    *::after {
+        box-sizing: inherit;
+    }
+
+    html {
+        // font-family: 'Roboto', sans-serif;
+        // font-size: 10px;
+        box-sizing: border-box;
+    }
+
+    /* Section used for centering process */
+    section {
+        width: 100%;
+        height: 100vh;
+        // background-color: #E0FFFF;
+    }
+
+    .container {
+        width: 100%;
+        max-width: 80rem;
+        margin: 0 auto;
+        padding: 0 1.5rem;
+    }
+
+    .accordion-item {
+        background-color: #e4e4e4;
+        border-radius: 0.4rem;
+        margin-bottom: 1rem;
+        padding: 1rem;
+        box-shadow: 0.5rem 2px 0.5rem rgba(0, 0, 0, 0.1);
+    }
+
+    .accordion-item:target {
+        .answer {
+            max-height: 100rem;
+        }
+
+        .accordion-link ion-icon[name='add-outline']{
+            display: none;
+        }
+
+        .accordion-link ion-icon[name='remove-outline']{
+            display: block;
+        }
+    }
+
+    .accordion-link {
+        font-size: 1.6rem;
+        color: black;
+        text-decoration: none;
+        background-color: #e4e4e4;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem 0;
+
+        i {
+            color: #e7d5ff;
+            padding: 0.5rem;
+        }
+
+        ion-icon[name='remove-outline'] {
+            display: none;
+        }
+    }
+
+    .answer {
+        overflow: hidden;
+        max-height: 0;
+        position: relative;
+        background-color: #d2d1d1;
+        transition: max-height 650ms;
+
+        ::before{
+            content: "";
+            position: absolute;
+            width: 0.6rem;
+            height: 90%;
+            background-color: #a6f3f3;
+            top: 50%;
+            left: 0.5rem;
+            transform: translateY(-50%);
+        }
+
+        p {
+            color: black;
+            font-size: 1.4rem;
+            padding: 2rem;
+
+            a::before {
+                display: none;
+            }
+        }
+    }
+    
+}
