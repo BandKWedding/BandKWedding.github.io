@@ -39,7 +39,7 @@ $(document).ready(function() {
   addPhoneNumberField();
 
   // +1 Button functionality
-  $("#addPersonButton").off().on("click touchstart", function() {
+  $("#addPersonButton").off().on("click", function() {
     addNameField();
   });
 
@@ -73,7 +73,7 @@ $(document).ready(function() {
   });
 
   // Click event to send email
-  $("#contact-button").off().on("click touchstart", function() {
+  $("#contact-button").off().on("click", function() {
     // Get information of RSVP Guests
     let firstNameFields = $(".first-name");
     let lastNameFields = $(".last-name");
@@ -109,37 +109,37 @@ $(document).ready(function() {
  */
 function sendMail(mainEmail, ccEmail, guests) {
   // Guest Names
-  let message_template = `Guests Attending:
+  let message = `Guests Attending:
 `;
   if (guests.length){
     let guestCount = 0;
     for (const guestNumber in guests){
       if (guestCount > 0){
-        message_template += `
+        message += `
 `;
       }
-      message_template += `- ${guests[guestNumber].firstName} ${guests[guestNumber].lastName}`;
+      message += `- ${guests[guestNumber].firstName} ${guests[guestNumber].lastName}`;
       guestCount++;
     }
-    message_template += `
+    message += `
 
 `;
   } else { // Add an Empty line is they didn't complete the form
-    message_template += `
+    message += `
 
 
 `
   }
 
   // Phone Number
-  message_template += `Phone Number: `;
+  message += `Phone Number: `;
   if (guests.length){
-    message_template += guests[0].phoneNumber;
-    message_template += `
+    message += guests[0].phoneNumber;
+    message += `
 
 `;
   } else { // Add an Empty line is they didn't complete the form
-    message_template += `
+    message += `
 
 
 `
@@ -147,13 +147,13 @@ function sendMail(mainEmail, ccEmail, guests) {
   
 
   // Do you need any help with anything?
-  message_template += `Do you need help with anything?:
+  message += `Do you need help with anything?:
   `;
 
   // Send templated email to the address
   var link = "mailto:" + mainEmail
            + "?Subject="+ encodeURIComponent("Wedding RSVP")
-           + "&body=" + encodeURIComponent(message_template);
+           + "&body=" + encodeURIComponent(message);
 
   // Send a copy of the email to the CC address
   if (ccEmail && ccEmail.length > 0){
@@ -161,4 +161,13 @@ function sendMail(mainEmail, ccEmail, guests) {
   }   
   
   window.location.href = link;
+
+  // Email.send({
+  //   Host : "smtp.yourisp.com",
+  //   Username : "username",
+  //   Password : "password",
+  //   To : 'them@website.com',
+  //   From : "you@isp.com",
+  //   Subject : "This is the subject",
+  //   Body : "And this is the body"}).then( message => alert(message));
 }
