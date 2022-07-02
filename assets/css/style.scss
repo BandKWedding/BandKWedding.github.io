@@ -452,6 +452,11 @@ iframe {
     #disqus_thread {
         margin-top: 5vmax;
     }
+
+    /* Add Special width of RSVP button on RSVP Page */
+    #contact-button {
+        width: 100%;
+    }
 }
 
 #page-section {
@@ -562,4 +567,28 @@ iframe {
         }
     }
     
+}
+
+/* RSVP Page */
+#rsvp-info {
+    .row{
+        // Set input field width for smaller screens
+        @media (max-width: 768px) {
+            .name{
+                width: 50%;
+            }
+        }
+
+        label{ 
+            margin-bottom: 0px;
+        }
+
+        input {
+            margin-bottom: 10%;
+        }
+    }
+}
+
+#addPersonButton { 
+    margin-bottom: 10%;
 }
