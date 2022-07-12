@@ -12,7 +12,7 @@ layout: compress
 <body>
   {% include navbar.html %}
 
-  <section class="hero is-fullheight has-text-centered" id="post">
+  <section class="hero is-fullheight has-text-centered" id="engagementPictures">
     <div class="hero-body">
       <div class="container">
         <a href="{{page.url | relative_url}}" class="has-text-black" id="title">
@@ -21,21 +21,146 @@ layout: compress
         <hr class="has-background-black">
         <div class="content has-text-justified-desktop has-text-justified-fullhd has-text-justified has-text-justified-tablet has-text-left-mobile">
           <p>{{ content }}</p>
-          <img src="../assets/images/engagement_pictures/1.jpg"></img>
-          <img src="../assets/images/engagement_pictures/2.jpg"></img>
-          <img src="../assets/images/engagement_pictures/3.jpg"></img>
-          <img src="../assets/images/engagement_pictures/4.jpg"></img>
-          <img src="../assets/images/engagement_pictures/5.jpg"></img>
-          <img src="../assets/images/engagement_pictures/6.jpg"></img>
-          <img src="../assets/images/engagement_pictures/7.jpg"></img>
-          <img src="../assets/images/engagement_pictures/8.jpg"></img>
-          <img src="../assets/images/engagement_pictures/9.jpg"></img>
-          <img src="../assets/images/engagement_pictures/10.jpg"></img>
-          <img src="../assets/images/engagement_pictures/11.jpg"></img>
-          <img src="../assets/images/engagement_pictures/12.jpg"></img>
-          <img src="../assets/images/engagement_pictures/13.jpg"></img>
-          <img src="../assets/images/engagement_pictures/14.jpg"></img>
-          <img src="../assets/images/engagement_pictures/15.jpg"></img>
+
+          <!-- {% for picture in site.assets.images.engagement_pictures %}
+            <div class="responsive">
+              <div class="gallery">
+                <a target="_blank" href="../assets/images/engagement_pictures/{{picture}}">
+                  <img src="../assets/images/engagement_pictures/{{picture}}" alt="B&K" width="600" height="400">
+                </a>
+              </div>
+            </div>
+          {% endfor %} -->
+
+          <div class="row">
+            <div class="responsive">
+              <div class="gallery">
+                <a target="_blank" href="../assets/images/engagement_pictures/2.jpg">
+                  <img src="../assets/images/engagement_pictures/2.jpg" alt="B&K" width="600" height="400">
+                </a>
+              </div>
+            </div>
+  
+            <div class="responsive">
+              <div class="gallery">
+                <a target="_blank" href="../assets/images/engagement_pictures/4.jpg">
+                  <img src="../assets/images/engagement_pictures/4.jpg" alt="B&K" width="600" height="400">
+                </a>
+              </div>
+            </div>
+  
+            <div class="responsive">
+              <div class="gallery">
+                <a target="_blank" href="../assets/images/engagement_pictures/5.jpg">
+                  <img src="../assets/images/engagement_pictures/5.jpg" alt="B&K" width="600" height="400">
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="responsive">
+              <div class="gallery">
+                <a target="_blank" href="../assets/images/engagement_pictures/6.jpg">
+                  <img src="../assets/images/engagement_pictures/6.jpg" alt="B&K" width="600" height="400">
+                </a>
+              </div>
+            </div>
+  
+            <div class="responsive">
+              <div class="gallery">
+                <a target="_blank" href="../assets/images/engagement_pictures/7.jpg">
+                  <img src="../assets/images/engagement_pictures/7.jpg" alt="B&K" width="600" height="400">
+                </a>
+              </div>
+            </div>
+  
+            <div class="responsive">
+              <div class="gallery">
+                <a target="_blank" href="../assets/images/engagement_pictures/8.jpg">
+                  <img src="../assets/images/engagement_pictures/8.jpg" alt="B&K" width="600" height="400">
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="responsive">
+              <div class="gallery">
+                <a target="_blank" href="../assets/images/engagement_pictures/9.jpg">
+                  <img src="../assets/images/engagement_pictures/9.jpg" alt="B&K" width="600" height="400">
+                </a>
+              </div>
+            </div>
+  
+            <div class="responsive">
+              <div class="gallery">
+                <a target="_blank" href="../assets/images/engagement_pictures/10.jpg">
+                  <img src="../assets/images/engagement_pictures/10.jpg" alt="B&K" width="600" height="400">
+                </a>
+              </div>
+            </div>
+  
+            <div class="responsive">
+              <div class="gallery">
+                <a target="_blank" href="../assets/images/engagement_pictures/12.jpg">
+                  <img src="../assets/images/engagement_pictures/12.jpg" alt="B&K" width="600" height="400">
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="responsive">
+              <div class="gallery">
+                <a target="_blank" href="../assets/images/engagement_pictures/13.jpg">
+                  <img src="../assets/images/engagement_pictures/13.jpg" alt="B&K" width="600" height="400">
+                </a>
+              </div>
+            </div>
+  
+            <div class="responsive">
+              <div class="gallery">
+                <a target="_blank" href="../assets/images/engagement_pictures/14.jpg">
+                  <img src="../assets/images/engagement_pictures/14.jpg" alt="B&K" width="600" height="400">
+                </a>
+              </div>
+            </div>
+  
+            <div class="responsive">
+              <div class="gallery">
+                <a target="_blank" href="../assets/images/engagement_pictures/15.jpg">
+                  <img src="../assets/images/engagement_pictures/15.jpg" alt="B&K" width="600" height="400">
+                </a>
+              </div>
+            </div>
+            <div class="responsive">
+              <div class="gallery">
+                <a target="_blank" href="../assets/images/engagement_pictures/1.jpg">
+                  <img src="../assets/images/engagement_pictures/1.jpg" alt="B&K" width="600" height="400">
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="responsive">
+              <div class="gallery">
+                <a target="_blank" href="../assets/images/engagement_pictures/3.jpg">
+                  <img src="../assets/images/engagement_pictures/3.jpg" alt="B&K" width="600" height="400">
+                </a>
+              </div>
+            </div>
+  
+            <div class="responsive">
+              <div class="gallery">
+                <a target="_blank" href="../assets/images/engagement_pictures/11.jpg">
+                  <img src="../assets/images/engagement_pictures/11.jpg" alt="B&K" width="600" height="400">
+                </a>
+              </div>
+            </div>
+          </div>
+
         </div>
         {% unless site.disqus-shortname == "" %}
         <div class="disqus-comments" id="disqus_thread"></div>
