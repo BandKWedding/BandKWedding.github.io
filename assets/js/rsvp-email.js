@@ -53,7 +53,7 @@ $(document).ready(function() {
   function addYesOrNo(){
     $("#rsvp-info").append(`
       <div class="row">
-        <label><b>Will you be attening our wedding?</b></label>
+        <label><b>Will you be attending our wedding?</b></label>
       </div>
       <div class="row">
         <input type="radio" name="responseYes" value="Yes" id="responseYes">
