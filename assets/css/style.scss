@@ -583,8 +583,20 @@ iframe {
             margin-bottom: 0px;
         }
 
-        input {
-            margin-bottom: 10%;
+        input, textarea {
+            margin-bottom: 20px;
+        }
+
+        @media (min-width: 769px) {
+            textarea {
+                width: 30%;
+            }
+        }
+
+        input[type="radio"] {
+            height: 1em;
+            margin-top: 0.25em;
+            margin-right: 1%;
         }
     }
 }

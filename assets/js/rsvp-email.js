@@ -22,7 +22,7 @@ $(document).ready(function() {
   /**
    * Add a name field to the form
    */
-   function addPhoneNumberField(){
+  function addPhoneNumberField(){
     $("#rsvp-info").append(`
     <div class="row">
       <label for="phone-number"><b>Phone Number</b>
@@ -33,10 +33,45 @@ $(document).ready(function() {
     `);
   }
 
+  /**
+   * Comment field to answer "Do you need help with anything?"
+   */
+  function addCommentField(){
+    $("#rsvp-info").append(`
+      <div class="row">
+        <label for="help-response"><b>Do you need help with anything?</b>
+      </div>
+      <div class="row">
+        <textarea placeholder="" id="help-response"></textarea>
+      </div>
+    `);
+  }
+
+  /**
+   * Checkboxes to check yes or no
+   */
+  function addYesOrNo(){
+    $("#rsvp-info").append(`
+      <div class="row">
+        <label><b>Will you be attening our wedding?</b></label>
+      </div>
+      <div class="row">
+        <input type="radio" name="responseYes" value="Yes" id="responseYes">
+        <label for="responseYes">Gladly Accepts</label>
+      </div>
+      <div class="row">
+        <input type="radio" name="responseYes" value="No" id="responseNo">
+        <label for="responseNo">Regretfully Declines</label>
+      </div>
+    `);
+  }
+
   // Enter information to prefill
   let numberNames = 0;
   addNameField();
   addPhoneNumberField();
+  addCommentField();
+  addYesOrNo();
 
   // +1 Button functionality
   $("#addPersonButton").off().on("click", function() {
@@ -124,7 +159,29 @@ function sendMail(mainEmail, ccEmail, guests) {
     message += `
 
 `;
-  } else { // Add an Empty line is they didn't complete the form
+  } else { // Add an Empty line incase they didn't complete the form
+    message += `
+
+`
+  }
+
+  // Attending Yes or No
+  let attendanceResponse = "";
+  if ($("#responseYes").prop('checked')) {
+    attendanceResponse = "Gladly Accepts";
+  } else if ($("#responseNo").prop('checked')){
+    attendanceResponse = "Regretfully Declines";
+  } else {
+    attendanceResponse = "No Answer Provided";
+  }
+
+  message += `Attendance: `;
+  if (attendanceResponse){
+    message += attendanceResponse;
+    message += `
+
+`;
+  } else { // Add an Empty line incase they didn't complete the form
     message += `
 
 
@@ -138,17 +195,27 @@ function sendMail(mainEmail, ccEmail, guests) {
     message += `
 
 `;
-  } else { // Add an Empty line is they didn't complete the form
+  } else { // Add an Empty line incase they didn't complete the form
+    message += `
+
+`
+  }
+
+  // Do you need any help with anything?
+  let helpComment = $("#help-response").val().trim() || "";
+  message += `Do you need help with anything?: 
+`;
+  if (helpComment.length){
+    message += helpComment;
+    message += `
+
+`;
+  } else { // Add an Empty line incase they didn't complete the form
     message += `
 
 
 `
   }
-  
-
-  // Do you need any help with anything?
-  message += `Do you need help with anything?:
-  `;
 
   // Send templated email to the address
   var link = "mailto:" + mainEmail
